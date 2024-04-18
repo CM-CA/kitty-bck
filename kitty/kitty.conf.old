@@ -1,0 +1,39 @@
+enable_audio_bell no
+
+include  ~/.config/kitty/theme.conf
+
+# Session
+startup_session ~/.config/kitty/kitty_session.conf
+
+# Habilitar todos, configuración por default 
+enabled_layouts *
+ 
+# Habilitar solo horizontal y vertical
+enabled_layouts horizontal,vertical
+
+# Moverme entre ventanas
+map ctrl+up neighboring_window up
+map ctrl+right neighboring_window right
+map ctrl+down neighboring_window bottom
+map ctrl+left neighboring_window left
+
+# Mover ventana de posicion
+map shift+up move_window up
+map shift+right move_window right
+map shift+down move_window down
+map shift+left move_window left
+
+# window border
+active_border_color   #603FEF
+inactive_border_color #CCCCCC
+bell_border_color     #ff5a00
+window_padding_width  4 
+
+# Tabs Settings
+tab_bar_style powerline
+tab_powerline_style round
+tab_activity_symbol none
+# inactive_tab_background #6816A5
+# active_tab_background #86a83e
+# inactive_tab_foreground #000000
+# tab_bar_margin_color black
